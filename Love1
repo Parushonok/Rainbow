@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <script>
+            let characterList = prompt ("Сколько играбельных персонажей в Risk of Rain 2?", "");
+
+            let message =  (characterList < 0) ? "Не, число персонажей явно положительное, а не отрицательное" :
+            (characterList == 0) ? "Можешь быть уверен(а), в этой игре есть персонажи" :
+            (characterList < 9) ? "Очень мало. Ты вообще играл/играла?" :
+            (characterList < 13) ? "Маловато" :
+            (characterList == 13) ? "КАР!!!" :
+            (characterList == 14) ? "Йеп! Молодец, жёпка!" :
+            (characterList < 20) ? "Многовато" : 
+            "Ну ты и лишкуешь. С модами переиграл(а)?";
+
+            alert(message);
+
+        </script>
+    </body>
+</html>
